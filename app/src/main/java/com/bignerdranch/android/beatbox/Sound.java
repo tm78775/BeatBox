@@ -1,13 +1,14 @@
 package com.bignerdranch.android.beatbox;
 
 /**
- * Created by TMiller on 8/12/2016.
+ * Model class designed to hold all variables relating to Sound.
  */
 public class Sound {
 
     // member variables
     private String mAssetPath;
     private String mName;
+    private int mSoundId;
 
     public Sound(String assetPath) {
         mAssetPath = assetPath;
@@ -22,4 +23,7 @@ public class Sound {
 
     public String getName() { return mName; }
     public void setName(String name) { mName = name; }
+
+    public int getSoundId() { return mSoundId; }
+    public void setSoundId(int soundId) { mSoundId = soundId; }
 }
